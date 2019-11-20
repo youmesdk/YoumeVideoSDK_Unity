@@ -1,10 +1,10 @@
 # Video SDK for Unity3D 使用指南
 
-##适用范围
+## 适用范围
 
 本文档适用于游密实时音视频引擎（Video SDK）Unity3D平台下接入，API接口说明部分同样适用于其他平台，可互相参考。
 
-##SDK目录概述
+## SDK目录概述
 
 YMRTC SDK提供了以下文件：
 
@@ -17,7 +17,7 @@ YMRTC SDK提供了以下文件：
 >`YouMeVoiceAPI.cs`：封装了Video SDK 的全部功能接口。
 >`YouMeConstDefine.cs`：包含Video SDK 错误码等枚举类型定义。
 
-##开发环境集成
+## 开发环境集成
 
 ### 从Unity3D开发环境集成
 
@@ -42,9 +42,9 @@ YMRTC SDK提供了以下文件：
 - 在`File`->`Build Settings…`的Platform列表中选择iOS，酌情点击`Switch Platform`按钮；
 - 点击`Build Settings`->`Build`，选择输出iOS工程的路径，输入工程名字，导出iOS工程；
 - 在Xcode中打开上一步输出的iOS工程，在工程配置中`Build Phases`->`Link Binary With Libraries`下拉菜单中添加添加这几个框架文件:`libsqlite3.0.tbd`、`libz.1.2.5.tbd`、`libresolv.9.tbd` 和 `CoreTelephony.framework`,`VideoToolbox.framework`,`AudioToolbox.framework`
-- ,`AVKit.framework`,`CoreVideo.framework`,`CoreFoundation.framework`
-- ,`AVFoundation.framework`,`SystemConfiguration.framework`,`CFNetwork.framework`
-- ,`GLKit.framework`
+- `AVKit.framework`,`CoreVideo.framework`,`CoreFoundation.framework`
+- `AVFoundation.framework`,`SystemConfiguration.framework`,`CFNetwork.framework`
+- `GLKit.framework`
 - **为iOS10以上版本添加录音权限配置**
 iOS10系统使用录音权限，需要在target的`info.plist`中新加`NSMicrophoneUsageDescription`键，值为字符串(授权弹窗出现时提示给用户)。首次录音时会向用户申请权限。配置方式如下：
 ![iOS10录音权限配置](https://youme.im/doc/images/im_iOS_record_config.jpg)
