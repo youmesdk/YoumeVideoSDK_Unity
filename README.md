@@ -48,3 +48,9 @@ YMRTC SDK提供了以下文件：
 - **为iOS10以上版本添加录音权限配置**
 iOS10系统使用录音权限，需要在target的`info.plist`中新加`NSMicrophoneUsageDescription`键，值为字符串(授权弹窗出现时提示给用户)。首次录音时会向用户申请权限。配置方式如下：
 ![iOS10录音权限配置](https://youme.im/doc/images/im_iOS_record_config.jpg)
+
+### 注：详细接口介绍可查看“Video SDK for unity-API手册.md”文档
+
+实际案例可点击此处下载->
+[Video Demo for Unity](https://github.com/youmesdk/YoumeVideoDemo_Unity)
+
