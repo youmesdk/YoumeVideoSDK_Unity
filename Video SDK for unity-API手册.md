@@ -391,7 +391,7 @@ true——静音，false——没有静音。
 ### 设置麦克风静音
 * **语法**
 
-``
+```
 	void SetMicrophoneMute (bool mute);
 ```
 
